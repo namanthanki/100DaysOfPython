@@ -1,4 +1,9 @@
-#Day-1-Challenge: Band Name Generator
+#-> Day-1-Challenge: Band Name Generator
+#-> Requirements: 
+#   -Greet User
+#   -Ask for user's city
+#   -Ask for user's pet name
+#   -Combine these two and display 
 
 print("Welcome to Band Name Generator!!!\n")
 
