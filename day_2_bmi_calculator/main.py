@@ -1,6 +1,3 @@
-from unittest import result
-
-
 print("BMI Calculator\n\n")
 
 bmi_mode = -1
