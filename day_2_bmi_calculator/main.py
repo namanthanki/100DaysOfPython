@@ -17,8 +17,8 @@ while True:
 
 while True:
     if(bmi_mode == 1):
-        height = int(input("Please enter your height in (Metres    - m)    : "))
-        weight = int(input("Please enter your weight in (Kilograms - kg)   : "))
+        height = float(input("Please enter your height in (Metres    - m)    : "))
+        weight = float(input("Please enter your weight in (Kilograms - kg)   : "))
 
         if(height > 0 and weight > 0):
             bmi_result = weight / (height ** 2)
@@ -27,8 +27,8 @@ while True:
             print("Please enter valid input\n")
 
     if(bmi_mode == 2): 
-        height = int(input("Please enter your height in (Inches - in)  : "))
-        weight = int(input("Please enter your weight in (Pound  - lbs) : "))
+        height = float(input("Please enter your height in (Inches - in)  : "))
+        weight = float(input("Please enter your weight in (Pound  - lbs) : "))
 
         if(height > 0 and weight > 0):
             bmi_result = 703 * weight / (height ** 2)
@@ -40,4 +40,3 @@ if(bmi_result > 0):
     print(f"Your BMI Score is: {bmi_result}")
 else: 
     print("Something went wrong...\n")
-
