@@ -1,6 +1,12 @@
 import random
+import ascii_art
+import words
 
-word = "beekeeper"
+
+print(ascii_art.logo)
+stages = ascii_art.stages
+
+word = random.choice(words.word_list)
 has_won = False
 
 print("Guess the Word: ")
@@ -10,16 +16,23 @@ current_state = list()
 for i in word: 
     current_state.append("_")
 
-life = length + 1
+life = 6
 
 while True:
     if life == 0: 
+        print(stages[0])
         break
     print(" ".join(current_state));
+    print(stages[life])
     if not "_" in current_state: 
         has_won = True
         break
-    guessed_letter = input("Guess the Letter: ")
+    while True: 
+        guessed_letter = input("Guess the Letter: ").lower()
+        if(len(guessed_letter) == 1):
+            break
+        else:
+            print("Please Only Input a Letter at Once...")
 
     if guessed_letter in word: 
         for i in range(length):
